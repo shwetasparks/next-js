@@ -20,6 +20,8 @@ function page() {
          <br />
 
          <button onClick={()=>navigate("/login")}> Login Page</button>
+         <br />
+         <button onClick={()=>navigate("/about/aboutstudent")}>About student</button>
          
          <br />
       </main>
