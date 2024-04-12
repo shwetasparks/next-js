@@ -1,5 +1,6 @@
 "use client";
 import { useEffect} from "react";
+import Product from "./product";
 
 
 export default function Page() {
@@ -14,9 +15,13 @@ export default function Page() {
       <div>
          <h1>Product List</h1>
          {
-        product.map((item)=>{
-            <h3>Name:{item.title}, Price:{item.price }</h3>
-        })
+        product.map((item)=>(
+           <div>
+            <h3>Name:{item.title}</h3>
+            <Product/>
+           </div>
+            
+        ))
          }
       </div>
    );
