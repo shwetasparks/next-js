@@ -6,10 +6,11 @@ async function userList() {
 }
 
 export default async function user() {
+    // redirect("/home")
    let users = await userList();
    console.log(users);
    return <div>
-   {
+   { 
     users.map((item)=>(
         <div>
             <h2>user name: {item.firstName}</h2>
